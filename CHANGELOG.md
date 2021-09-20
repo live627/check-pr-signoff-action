@@ -1,5 +1,12 @@
 # Changelog
 
+## 1.0.0 (2021-09-20)
+
+
+### Features
+
+* First major release ([9a940ca](https://www.github.com/live627/check-pr-signoff-action/commit/9a940ca36c20e71b0f565151eb8efd28e01374a1))
+
 ## 1.0.0 (2021-09-19)
 
 
