@@ -1,0 +1,14 @@
+name: 'Check PR commits signed off'
+description: 'Checks for a sign-off in every commit in a pull request'
+author: 'GitHub'
+inputs:
+  token:
+    description: 'GitHub token for commenting on PRs, defaults to using secrets.GITHUB_TOKEN'
+    required: false
+    default: ${{ github.token }}
+runs:
+  using: 'node12'
+  main: 'dist/index.js'
+branding:
+  icon: check-circle
+  color: purple

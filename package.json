@@ -1,0 +1,30 @@
+{
+  "name": "check-pr-signoff-action",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Checks for a sign-off in every commit in a pull request and adds a comment if a commit was detected without one.",
+  "main": "dist/index.js",
+  "scripts": {
+    "lint": "eslint . --fix",
+    "build": "ncc build src/main.js -m",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/live627/check-pr-signoff-action.git"
+  },
+  "author": "live627",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/live627/check-pr-signoff-action/issues"
+  },
+  "homepage": "https://github.com/live627/check-pr-signoff-action#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.4",
+    "@actions/github": "^4.0.0"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.31.1",
+    "eslint": "^5.13.0"
+  }
+}
